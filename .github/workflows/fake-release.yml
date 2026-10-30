@@ -1,0 +1,13 @@
+name: Release Workflow
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  fake-release:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "forged Release Workflow run from a fork PR branch named development"
